@@ -1,9 +1,3 @@
-# ================================================
-# Skeleton codes for HW4
-# Read the skeleton codes carefully and put all your
-# codes into main function
-# ================================================
-
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -104,7 +98,7 @@ def do_graph_cut(fgbg_hists, fgbg_superpixels, norm_hists, neighbors):
     return g.get_grid_segments(nodes)
 
 def RMSD(target, master):
-    # Note: use grayscale images only
+    # Note: grayscale images only
 
     # Get width, height, and number of channels of the master image
     master_height, master_width = master.shape[:2]
